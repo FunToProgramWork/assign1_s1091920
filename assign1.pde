@@ -19,7 +19,13 @@ void setup(){
 }
 
 void draw() {
- 
+  strokeWeight(15.0);//草地
+  stroke(124,204,25);//草地顏色
+  line(0,152.5,640,152.5);//草地位置
+  strokeWeight(5);//太陽外框粗細
+  stroke(255, 255, 0);//外框顏色
+  fill(253, 184, 19);//內圈顏色
+  circle(590,50,120);//太陽位置
   image(bgImg,0,0);//背景位置
   image(soilImg, 0,160);//土位置
   image(lifeImg,10,10);//生命位置(左)
@@ -28,13 +34,7 @@ void draw() {
   image(soldierImg, x, 160);//士兵位置，移動
   image(robotImg, 240, 240); //機器人位置
   image(groundhog,280,80);//土撥鼠位置
-   strokeWeight(15.0);//草地
-  stroke(124,204,25);//草地顏色
-  line(0,152.5,640,152.5);//草地位置
-  strokeWeight(5);//太陽外框粗細
-  stroke(255, 255, 0);//外框顏色
-  fill(253, 184, 19);//內圈顏色
-  ellipse(590,50,120);//太陽位置
+  
   strokeWeight(10.0);//光粗細
   strokeCap(ROUND);
   stroke(255,0,0);//光顏色
