@@ -28,6 +28,13 @@ void draw() {
   image(soldierImg, x, 160);//士兵位置，移動
   image(robotImg, 240, 240); //機器人位置
   image(groundhog,280,80);//土撥鼠位置
+   strokeWeight(15.0);//草地
+  stroke(124,204,25);//草地顏色
+  line(0,152.5,640,152.5);//草地位置
+  strokeWeight(5);//太陽外框粗細
+  stroke(255, 255, 0);//外框顏色
+  fill(253, 184, 19);//內圈顏色
+  ellipse(590,50,120);//太陽位置
   strokeWeight(10.0);//光粗細
   strokeCap(ROUND);
   stroke(255,0,0);//光顏色
@@ -36,11 +43,5 @@ void draw() {
   x=x+2;//移動速度
   if ( x > 640)//移動超出右側
   x = -80;//回到左側-80
-  strokeWeight(15.0);//草地
-  stroke(124,204,25);//草地顏色
-  line(0,152.5,640,152.5);//草地位置
-  strokeWeight(5);//太陽外框粗細
-  stroke(255, 255, 0);//外框顏色
-  fill(253, 184, 19);//內圈顏色
-  ellipse(590,50,120);//太陽位置
+
 }
