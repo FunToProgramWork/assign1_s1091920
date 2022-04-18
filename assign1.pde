@@ -26,7 +26,7 @@ void draw() {
   stroke(124,204,25);//草地顏色
   line(0,152.5,640,152.5);//草地位置
 
-  strokeWeight(5.0);  
+  strokeWeight(5.0);  //太陽外框粗細
   stroke(255,255,0);//太陽外框顏色  
   ellipse(590, 50, 130, 130); //外框位置(x,y,大小)
   ellipseMode(CENTER);  
