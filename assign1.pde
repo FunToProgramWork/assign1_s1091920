@@ -25,7 +25,7 @@ void draw() {
   strokeWeight(5);//太陽外框粗細
   stroke(255, 255, 0);//外框顏色
   fill(253, 184, 19);//內圈顏色
-  circle(590,50,120);//太陽位置
+  ellipse(590,50,120,120);//太陽位置
   image(bgImg,0,0);//背景位置
   image(soilImg, 0,160);//土位置
   image(lifeImg,10,10);//生命位置(左)
