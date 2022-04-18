@@ -19,17 +19,18 @@ void setup(){
 }
 
 void draw() {
-  ellipseMode(CENTER);  
-  fill(255,255,0);//外框顏色  
-  ellipse(590, 50, 130, 130); //外框位置(x,y,大小)
-  ellipseMode(CENTER);  
-  fill(253,184,19);  //內圏顏色 
-  ellipse(590, 50, 120,120); //內圈位置(x,y,大小)
-  
+
   strokeWeight(15.0);//草地
   stroke(124,204,25);//草地顏色
   line(0,152.5,640,152.5);//草地位置
-
+  
+  ellipseMode(CENTER);  
+  fill(255,255,0);//太陽外框顏色  
+  ellipse(590, 50, 130, 130); //外框位置(x,y,大小)
+  ellipseMode(CENTER);  
+  fill(253,184,19);  //太陽內圏顏色 
+  ellipse(590, 50, 120,120); //內圈位置(x,y,大小)
+  
   image(bgImg,0,0);//背景位置
   image(soilImg, 0,160);//土位置
   image(lifeImg,10,10);//生命位置(左)
